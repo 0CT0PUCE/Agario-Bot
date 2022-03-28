@@ -19,14 +19,10 @@ from pynput.keyboard import Controller
 import random
 
 delay = 5
-path = r'C:\Users\soren\Downloads'
-files = os.listdir(path)
-dir_path = r'C:\Users\soren\Downloads'
-cloud = r'C:\Users\soren\OneDrive\Music'
 x = 0
 DT = 60
 RDT = ""
-chromedriver_path = r'C:\Users\soren\Desktop\chromedriver.exe'
+chromedriver_path = r'path/to/chromedriver.exe'
 webdriver = webdriver.Chrome(executable_path=chromedriver_path)
 main_page = webdriver.current_window_handle
 webdriver.minimize_window()
@@ -54,12 +50,12 @@ sleep(10)
 mo=0
 
 while 2<3 :
-  img = cv2.imread(r"D:\ARCHIVES\Computer_stuff\ATOM\play.png")
+  img = cv2.imread(r"\play.png")
   y = pyautogui.locateOnScreen(img)
   death=0
   d="left"
   while 2 < 3 :
-      img = cv2.imread(r"D:\ARCHIVES\Computer_stuff\ATOM\play.png")
+      img = cv2.imread(r"\play.png")
       y = pyautogui.locateOnScreen(img)
       if y == None :
           sleep(0)

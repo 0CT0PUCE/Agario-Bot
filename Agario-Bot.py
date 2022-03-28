@@ -21,14 +21,10 @@ import random
 
 
 delay = 5
-path = r'C:\Users\soren\Downloads'
-files = os.listdir(path)
-dir_path = r'C:\Users\soren\Downloads'
-cloud = r'C:\Users\soren\OneDrive\Music'
 x = 0
 DT = 60
 RDT = ""
-chromedriver_path = r'C:\Users\soren\Desktop\chromedriver.exe'
+chromedriver_path = r'path/to/chromedriver.exe'
 webdriver = webdriver.Chrome(executable_path=chromedriver_path)
 main_page = webdriver.current_window_handle
 webdriver.maximize_window()
@@ -59,11 +55,11 @@ if 2 < 3:
     sleep(2)
     login = webdriver.find_element_by_xpath('//*[@id="loginForm"]/div[1]/input')
     login.click()
-    keyboard.type('0CT0PUCE')
+    keyboard.type('USERNAME')
     PS = webdriver.find_element_by_xpath('//*[@id="loginForm"]/div[2]/input')
     PS.click()
     sleep(1)
-    keyboard.type('legO2005')
+    keyboard.type('PASSWORD')
     sleep(1)
     CO = webdriver.find_element_by_xpath('//*[@id="loginForm"]/div[4]/button')
     CO.click()
